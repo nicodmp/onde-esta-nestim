@@ -78,7 +78,7 @@ export const NestimProfileCard: React.FC<NestimProfileCardProps> = ({
                 className="w-full h-full object-cover group-hover:scale-105 transition duration-500"
                 referrerPolicy="no-referrer"
                 onError={(e) => {
-                  (e.target as HTMLImageElement).src = '/nestim_avatar.jpg';
+                  (e.target as HTMLImageElement).src = `${import.meta.env.BASE_URL}nestim_avatar.jpg`;
                 }}
               />
             </div>

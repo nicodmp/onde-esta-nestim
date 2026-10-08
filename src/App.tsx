@@ -13,7 +13,9 @@ import { Compass, Sparkles, Heart, Coffee, MapPin } from 'lucide-react';
 
 export default function App() {
   const [currentCity, setCurrentCity] = useState<MGCity>(() => getRandomCity());
-  const [avatarUrl, setAvatarUrl] = useState<string>('/nestim_avatar.jpg');
+  const [avatarUrl, setAvatarUrl] = useState<string>(
+    () => `${import.meta.env.BASE_URL}nestim_avatar.jpg`
+  );
   const [isAutoUpdating, setIsAutoUpdating] = useState<boolean>(true);
   const [updateIntervalSec, setUpdateIntervalSec] = useState<number>(10);
   const [countdown, setCountdown] = useState<number>(10);

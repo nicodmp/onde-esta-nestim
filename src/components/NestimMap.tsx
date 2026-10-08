@@ -199,7 +199,7 @@ export const NestimMap: React.FC<NestimMapProps> = ({
                       className="w-full h-full object-cover"
                       referrerPolicy="no-referrer"
                       onError={(e) => {
-                        (e.target as HTMLImageElement).src = '/nestim_avatar.jpg';
+                        (e.target as HTMLImageElement).src = `${import.meta.env.BASE_URL}nestim_avatar.jpg`;
                       }}
                     />
                   </div>
