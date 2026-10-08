@@ -1,0 +1,6 @@
+{
+  "name": "Onde está Nestim agora?",
+  "description": "Rastreador em tempo real do paradeiro de Nestim pelas cidades históricas e charmosas de Minas Gerais.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
